@@ -1,0 +1,48 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+header {
+	margin: 50px;
+	height: 10%;
+	width: 100%;
+}
+
+.search_section	{
+	height: 30%;
+	width: 100%;
+}
+
+input {
+	height: 70px;
+	border: 1px solid;
+	border-radius: 8px;
+}
+
+#textbar {
+	width: 1000px;
+}
+
+#but {
+	width: 100px;
+	height: 75px;
+}
+
+.icon_section {
+	height: 30%;
+	width: 100%;
+}
+
+.tm {
+	display: inline-block;
+	margin: 20px;
+}
+
+figure img {
+	width: 100px;
+	height: 100px;
+}
