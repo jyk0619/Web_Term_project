@@ -5,6 +5,10 @@ html {
     justify-content: center;
 }
 
+.category_list {
+    margin-bottom: 40px;
+}
+
 .category_btn {
     width: 90%;
     height: 90%;
@@ -16,9 +20,14 @@ html {
     cursor: pointer;
 }
 
-.category > button img {
+.category > button > img {
     width: 70%;
 }
+
+.category > figcaption {
+    font-weight: bold;
+    font-size: 20px;
+} 
 
 .category {
     height: 130px;
