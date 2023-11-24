@@ -4,7 +4,7 @@ html {
 
 body {
 	text-align: center;
-	background-image: url('C:/WorkSpace/Web_Term_Project/pic/background.png');
+	background-image: url('../pic/background.png');
 	background-size: cover;
 }
 
