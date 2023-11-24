@@ -1,0 +1,40 @@
+html {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: white;
+}
+
+.local_btn {
+    width: 90%;
+    height: 90%;
+    padding: 0px;
+    margin-bottom: 4px;
+    border-radius: 20%;
+    border: none;
+    background: lightskyblue;
+    cursor: pointer;
+}
+
+.local > button > img {
+    width: 70%;
+    height: 70%;
+}
+
+.local > figcaption {
+    font-weight: bold;
+    font-size: 16px;
+} 
+
+.local {
+    height: 80px;
+    width: 80px;
+    margin: 0px;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+}
