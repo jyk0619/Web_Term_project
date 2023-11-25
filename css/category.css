@@ -1,0 +1,40 @@
+html {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: white;
+}
+
+.category_btn {
+    width: 90%;
+    height: 90%;
+    padding: 0px;
+    margin-bottom: 6px;
+    border-radius: 20%;
+    border: none;
+    background: lightskyblue;
+    cursor: pointer;
+}
+
+.category > button > img {
+    width: 70%;
+    height: 70%;
+}
+
+.category > figcaption {
+    font-weight: bold;
+    font-size: 14px;
+} 
+
+.category {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+}
