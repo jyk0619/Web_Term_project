@@ -13,23 +13,23 @@ header {
 }
 
 .search_section	{
-	height: 30%;
+	height: 10%;
 	width: 100%;
 }
 
 input {
-	height: 70px;
+	height: 50px;
 	border: 1px solid;
 	border-radius: 8px;
 }
 
 #textbar {
-	width: 1000px;
+	width: 80%;
 }
 
 #but {
-	width: 100px;
-	height: 75px;
+	width: 10%;
+	height: 50px;
 }
 
 .icon_section {
@@ -37,12 +37,17 @@ input {
 	width: 100%;
 }
 
+.iframe_section{
+	height: 30%;
+	width: 100%;
+}
+
 .tm {
 	display: inline-block;
-	margin: 20px;
+	margin: 5px;
 }
 
 figure img {
-	width: 100px;
-	height: 100px;
+	width: 30px;
+	height: 30px;
 }
