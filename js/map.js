@@ -3,7 +3,11 @@ let icons = ['https://i.namu.wiki/i/Z9iQrf3AyKIbePwO7NXspeJVcKi8xnAQDLRaTbwiDwgv
 for (let i = 0; i < local_list.length; i++) {
     document.write('<tr>')
     for (let j = 0; j < local_list[i].length; j++) {
-        document.write('<td><figure class="local"><button class="local_btn"><img src="'+icons[i*local_list.length+j]+'" alt="'+local_list[i][j]+' 이미지"></button><figcaption>'+local_list[i][j]+'</figcaption></figure></td>')
+        document.write('<td><figure class="local"><button class="local_btn" onclick="load('+i+','+j+')"><img src="'+icons[i*local_list.length+j]+'" alt="'+local_list[i][j]+' 이미지"></button><figcaption>'+local_list[i][j]+'</figcaption></figure></td>')
     }
     document.write('</tr>')
+}
+
+function load(i, j) {
+    window.open('item.html?location=' + local_list[i][j]);
 }

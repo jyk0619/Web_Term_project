@@ -17,8 +17,8 @@
 	<section class="search_section">
 		<div class="search_form">
 			<form id="form_sc" action="item.html" name="sc" method="get">
-				<input id="textbar" type="text" name="text" placeholder="여기에 축제/행사명을 입력하세요">
-				<input id="but" type="submit" name="button" value="검색">
+				<input id="textbar" type="text" name="s_name" placeholder="여기에 축제/행사명을 입력하세요">
+				<input id="but" type="submit" value="검색">
 			</form>
 		</div>
 	</section>
@@ -26,7 +26,7 @@
 	<section class="icon_section">
 
 		<div class="icon_div">
-			<div class="tm">
+			<div class="tm" onclick="changeIframe('map.html')">
 				<figure id="map">		
 					<img src="pic/map.png">
 					<figcaption>
@@ -34,7 +34,7 @@
 					</figcaption>
 				</figure>
 			</div>
-			<div class="tm">
+			<div class="tm" onclick="changeIframe('category.html')">
 				<figure id="cat">		
 					<img src="pic/categories.png">
 					<figcaption>
@@ -42,7 +42,7 @@
 					</figcaption>
 				</figure>
 			</div>
-			<div class="tm">
+			<div class="tm" onclick="changeIframe('calender.html')">
 				<figure id="cal">		
 					<img src="pic/calendar.png">
 					<figcaption>
@@ -54,8 +54,10 @@
 	</section>
 
 	<section class="iframe_section">
-		<iframe src="calender.html", width="700", height="400" style="border: 0px;"></iframe>
+		<iframe name="main_frame" id="main_frame" src=" "></iframe>
 	</section>
+
+	<script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>

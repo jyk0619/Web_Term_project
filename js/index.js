@@ -1,2 +1,3 @@
-let click  = document.querySelector('');
-click.addEventListener("click", );
+function changeIframe(url) {
+	document.getElementById("main_frame").src = url;
+}

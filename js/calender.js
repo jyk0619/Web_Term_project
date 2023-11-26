@@ -49,6 +49,8 @@ window.onload = function () { buildCalendar(); }
                     newDIV.onclick = function () { choiceDate(this); }
                 }
             }
+
+
         }
 
         // 날짜 선택
@@ -79,3 +81,5 @@ window.onload = function () { buildCalendar(); }
             }
             return value;
         }
+
+        
