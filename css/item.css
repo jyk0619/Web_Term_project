@@ -1,8 +1,21 @@
+body {
+	text-align: center;
+}
+
 h1 {
 	text-align: center;
 }
 
+.content {
+	display: inline-block;
+}
+
+div {
+	display: inline-block;
+}
+
 .searching {
+	display: inline-block;
 	font-family: sans-serif;
 }
 
@@ -10,12 +23,12 @@ table {
 	border-collapse: collapse;
 	border: 1px solid gray;
 	font-size: 20px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 select {
-	font-size: 20px;
+	font-size: 17px;
 	margin: 5px;
 }
 
@@ -27,12 +40,19 @@ input {
 th {
 	border: 1px solid gray;
 	background: lightgray;
-	width: 150px;
+	width: 120px;
 	height: 70px;
 }
 
 td {
+	width: 800px;
 	border: 1px solid gray;
+	font-size: 17px;
+	padding: 20px;
+}
+
+#categories {
+	line-height: 2em;
 }
 
 #textbar {
@@ -42,4 +62,59 @@ td {
 #but {
 	width: 70px;
 	height: 53px;
+}
+
+.item_list {
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+	border-top: #767676 1px solid;
+	text-align: left;
+}
+
+.item {
+	border-bottom: #ddd 1px solid;
+}
+
+a {
+	display: table;
+	text-decoration: none;
+	padding: 30px 40px;
+}
+
+.thum {
+	display: table-cell;
+	vertical-align: top;
+	padding: 0 30px 0 0;
+}
+
+.tbx {
+	display: table-cell;
+    vertical-align: top;
+}
+
+.tbx > em {
+	display: block;
+	width: 600px;
+	font-style: normal;
+	text-align: left;
+}
+
+#subject {
+    color: #222;
+    font-size: 22px;
+    font-weight: 600;
+	margin-bottom: 10px;
+}
+
+#place, #date {
+    font-size: 14px;
+    color: #767676;
+}
+
+#txt {
+    margin-top: 15px;
+    color: #555;
+	font-size: 15px;
+    line-height: 1.5em;
 }
