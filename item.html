@@ -4,8 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="css/item.css">
 </head>
+
 <body>
-    검색결과창임
+
+    <header>
+        <h1> 서울시 축제/행사명 찾기 </h1>
+    </header>
+
+    <div class="formdiv">
+        <form class="searching">
+            <table>
+                <tbody>
+                    <tr> 
+                        <th> 지역 </th>
+                        <td> 
+                            <select name="location">
+                                <option value="Jongno"> 종로구 </option>
+                                <option value="Jung"> 중구 </option>
+                                <option value="Yongsan"> 용산구 </option>
+                                <option value="Seongdong"> 성동구 </option>
+                                <option value="Gwangjin"> 광진구 </option>
+                                <option value="Dongdaemun"> 동대문구 </option>
+                                <option value="Jungnang"> 중랑구 </option>
+                                <option value="Seongbuk"> 성북구 </option>
+                                <option value="Gangbuk"> 강북구 </option>
+                                <option value="Dobong"> 도봉구 </option>
+                                <option value="Nowon"> 노원구 </option>
+                                <option value="Eunpyeong"> 은평구 </option>
+                                <option value="Seodaemun"> 서대문구 </option>
+                                <option value="Mapo"> 마포구 </option>
+                                <option value="Yangcheon"> 양천구 </option>
+                                <option value="Gangseo"> 강서구 </option>
+                                <option value="Guro"> 구로구 </option>
+                                <option value="Gumcheon"> 금천구 </option>
+                                <option value="Yeongdeungpo"> 영등포구 </option>
+                                <option value="Dongjack"> 동작구 </option>
+                                <option value="Gwanak"> 관악구 </option>
+                                <option value="Seocho"> 서초구 </option>
+                                <option value="Gangnam"> 강남구 </option>
+                                <option value="Songpa"> 송파구 </option>
+                                <option value="Gangdong"> 강동구 </option>
+                            </select>
+                        </td> 
+                    </tr>
+                    <tr> 
+                        <th> 카테고리 </th>
+                        <td>
+                            <input type="checkbox" name="clasic"> 클래식
+                            <input type="checkbox" name="concert"> 콘서트
+                            <input type="checkbox" name="festival"> 축제
+                            <input type="checkbox" name="art"> 전시/미술             
+                            <input type="checkbox" name="movie"> 영화                 
+                            <input type="checkbox" name="play"> 연극                   
+                            <input type="checkbox" name="opera"> 뮤지컬/오페라                  
+                            <input type="checkbox" name="dance"> 무용                    
+                            <input type="checkbox" name="solo"> 독주/독창회                    
+                            <input type="checkbox" name="tranditional"> 국악                   
+                            <input type="checkbox" name="education"> 교육/체험
+                            <input type="checkbox" name="others"> 기타
+                        </td>
+                    </tr>
+                    <tr> 
+                        <th> 날짜 </th>
+                        <td>
+                            <input type="month" name="month">
+                        </td> 
+                    </tr>
+                    <tr> 
+                        <th> 검색어 </th>
+                        <td>
+                            <input type="text" id="textbar" size="80" name="s_name">
+                            <input type="submit" id="but" value="검색">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+=======
+</head>
 </body>
 </html>

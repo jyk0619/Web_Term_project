@@ -1,0 +1,45 @@
+h1 {
+	text-align: center;
+}
+
+.searching {
+	font-family: sans-serif;
+}
+
+table {
+	border-collapse: collapse;
+	border: 1px solid gray;
+	font-size: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+select {
+	font-size: 20px;
+	margin: 5px;
+}
+
+input {
+	font-size: 17px;
+	margin: 5px;
+}
+
+th {
+	border: 1px solid gray;
+	background: lightgray;
+	width: 150px;
+	height: 70px;
+}
+
+td {
+	border: 1px solid gray;
+}
+
+#textbar {
+	height: 50px;
+}
+
+#but {
+	width: 70px;
+	height: 53px;
+}
