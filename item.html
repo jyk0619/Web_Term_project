@@ -16,13 +16,13 @@
 
     <section class="content">
         <div class="formdiv">
-            <form class="searching">
+            <form class="searching" onsubmit="submitForm(); return false;">
                 <table>
                     <tbody>
                         <tr> 
                             <th> 지역 </th>
                             <td> 
-                                <select name="location">
+                                <select name="location" >
                                     <option value="Jongno"> 종로구 </option>
                                     <option value="Jung"> 중구 </option>
                                     <option value="Yongsan"> 용산구 </option>
@@ -54,20 +54,21 @@
                         <tr> 
                             <th> 카테고리 </th>
                             <td id="categories">
-                                <input type="checkbox" name="clasic">클래식
-                                <input type="checkbox" name="concert">콘서트
-                                <input type="checkbox" name="festival">축제
-                                <input type="checkbox" name="art">전시/미술             
-                                <input type="checkbox" name="movie">영화                 
-                                <input type="checkbox" name="play">연극
+                                <input type="radio" name="category" value="clasic">클래식
+                                <input type="radio" name="category" value="concert">콘서트
+                                <input type="radio" name="category" value="festival">축제
+                                <input type="radio" name="category" value="art">전시/미술             
+                                <input type="radio" name="category" value="movie">영화                 
+                                <input type="radio" name="category" value="play">연극
                                 <br>             
-                                <input type="checkbox" name="opera">뮤지컬/오페라                  
-                                <input type="checkbox" name="dance">무용                    
-                                <input type="checkbox" name="solo">독주/독창회                    
-                                <input type="checkbox" name="tranditional">국악                   
-                                <input type="checkbox" name="education">교육/체험
-                                <input type="checkbox" name="others">기타
+                                <input type="radio" name="category" value="opera">뮤지컬/오페라                  
+                                <input type="radio" name="category" value="dance">무용                    
+                                <input type="radio" name="category" value="solo">독주/독창회                    
+                                <input type="radio" name="category" value="tranditional">국악                   
+                                <input type="radio" name="category" value="education">교육/체험
+                                <input type="radio" name="category" value="others">기타
                             </td>
+                            
                         </tr>
                         <tr> 
                             <th> 날짜 </th>
@@ -80,7 +81,7 @@
                             <th> 검색어 </th>
                             <td>
                                 <input type="text" id="textbar" size="50" name="s_name">
-                                <input type="submit" id="but" value="검색">
+                                <input type="submit" id="btn" value="검색">
                             </td>
                         </tr>
                     </tbody>
@@ -88,52 +89,54 @@
             </form>
         </div>
     
+        <script>
+            function submitForm() {
+                // 폼 요소에 접근
+                var form = document.querySelector('.searching');
+            
+                // 폼 데이터 가져오기
+                var formData = new FormData(form);
+                console.log(formData)
+            
+                var locationValue = formData.get('location');
+                var categoryValue = formData.get('category');
+                var startValue = formData.get('start');
+                var endValue = formData.get('end');
+                var sNameValue = formData.get('s_name');
+
+                console.log('지역:', locationValue);
+                console.log('카테고리:', categoryValue);
+                console.log('시작 날짜:', startValue);
+                console.log('종료 날짜:', endValue);
+                console.log('검색어:', sNameValue);
+                
+                }
+        </script>
+
+
+
         <div class="item_list">
-            <div class="item">
-                <a class="pageopen" href="" target="_blank" title="새창열림">     
-                    <span class="thum">
-                        <img class="mainimage" width="150" height="150" src="http://news.seoul.go.kr/culture/files/2023/11/656183b3179f70.08991263.jpg" alt="">
-                    </span> 
-                    <span class="tbx">
-                        <em class="title">제목</em>
-                        <em class="place">위치</em>
-                        <em class="date">날짜</em>
-                        <em class="text">텍스트</em>
-                    </span>
-                </a>
+            <div class="item">                
             </div>
-            <div class="item">
-                <a class="pageopen" href="" target="_blank" title="새창열림">     
-                    <span class="thum">
-                        <img class="mainimage" width="150" height="150" src="http://news.seoul.go.kr/culture/files/2023/11/656183b3179f70.08991263.jpg" alt="">
-                    </span> 
-                    <span class="tbx">
-                        <em class="title">제목</em>
-                        <em class="place">위치</em>
-                        <em class="date">날짜</em>
-                        <em class="text">텍스트</em>
-                    </span>
-                </a>
+
+            <div class="item">                
             </div>
+
+            <div class="item">                
+            </div>
+
             <div class="item">
-                <a class="pageopen" href="" target="_blank" title="새창열림">     
-                    <span class="thum">
-                        <img class="mainimage" width="150" height="150" src="http://news.seoul.go.kr/culture/files/2023/11/656183b3179f70.08991263.jpg" alt="">
-                    </span> 
-                    <span class="tbx">
-                        <em class="title">제목</em>
-                        <em class="place">위치</em>
-                        <em class="date">날짜</em>
-                        <em class="text">텍스트</em>
-                    </span>
-                </a>
-            </div> 
-        </div>
+            </div>
+
+            <div class="item">
+            </div>
     </section>
 
+    <script>
+        
+    </script>
 
     <script src="js/item.js"></script>
     
-
 </body>
 </html>
