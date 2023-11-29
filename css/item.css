@@ -66,10 +66,10 @@ td {
 
 .item_list {
     display: table;
-    width: 100%;
+    width: 1000px;
     box-sizing: border-box;
 	border-top: #767676 1px solid;
-	text-align: left;
+	text-align: center;
 }
 
 .item {
@@ -100,19 +100,19 @@ a {
 	text-align: left;
 }
 
-#subject {
+.title {
     color: #222;
     font-size: 22px;
     font-weight: 600;
 	margin-bottom: 10px;
 }
 
-#place, #date {
+.place, .danumte, .fee {
     font-size: 14px;
     color: #767676;
 }
 
-#txt {
+.txt {
     margin-top: 15px;
     color: #555;
 	font-size: 15px;
