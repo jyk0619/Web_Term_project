@@ -1,16 +1,25 @@
 html {
 	font-family: sans-serif ;
+	height: 100%;
+	width: 100%;
 }
 
 body {
 	text-align: center;
-	background-image: url('../pic/background.png');
-	background-size: cover;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
 }
 
 header {
-	margin: 100px;
-	height: 20%;
+	width: 100%;
+	height: 10%;
+}
+
+.image_slide {
+	width: 100%;
+	height: 30%;
 }
 
 .search_section	{
@@ -18,57 +27,84 @@ header {
 }
 
 .search_form {
-	height: 80px;
+	text-align: center;
+	margin: auto;
+	width: 800px;
+	height: 60px;
 }
 
 #form_sc {
+	position: relative;
+	border: 1px solid;
+	border-radius: 50px;
+	width: 100%;
 	height: 100%;
 }
 
-#textbar {
-	border: 1px solid;
-	border-radius: 10px;
-	width: 1000px;
-	font-size: 30px;
-	height: 100%;
+.textbar {
+	float: left;
+	margin: 10px;
+	border: none;
+	font-size: 20px;
+	width: 90%;
+	height: 40px;
 }
 
-#but {
-	width: 100px;
-	height: 100%;
-	border: 1px solid;
-	border-radius: 10px;
+.but {
+	background: none;
+	border: none;
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	right: 2%;
+}
+
+.but img {
+	width: 40px;
+	height: 40px;
 }
 
 .icon_section {
-	height: 30%;
+	background: lightgray;
+	width: 100%;
 }
 
-.iframe_section{
-	height: 30%;
-	width: 100%;
+.con {
+	padding-top: 50px;
 }
 
 .tm {
 	display: inline-block;
 	margin: 5px;
+	cursor: pointer;
 }
 
 figure img {
-	width: 100px;
-	height: 100px;
-	background: white;
-	border-radius: 8px;
-	border: 3px solid white;
+	width: 60px;
+	height: 60px;
+	background: lightskyblue;
+	border-radius: 20%;
+	padding: 10px;
 }
 
 figcaption {
-	position: relative;
 	font-size: 20px;
-	top: 2px;
 }
 
-iframe {
+#main_frame {
+	background: lightgray;
+	border: none;
 	width: 1000px;
-	height: 700px;
+	height: 600px;
+}
+
+footer {
+	background: none;
+	width: 100%;
+	height: 20%;
+}
+
+a {
+	text-decoration: none;
+	color: black;
 }

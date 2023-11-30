@@ -9,28 +9,34 @@
 
 <body>
 	<header>
-		<div class="head">
-			<h1>서울시 축제/행사 찾기 사이트입니다 </h1>
+		<div>
+			<h1> 서울시 축제/행사 찾기 사이트입니다 </h1>
 		</div>
 	</header>
 
+	<section class="image_slide">
+		이미지 슬라이드 들어갈 위치
+	</section>
+
 	<section class="search_section">
+		<h2> 여기에 축제/행사명을 입력하세요 </h2>
 		<div class="search_form">
 			<form id="form_sc" action="item.html" name="sc" method="get">
-				<input id="textbar" type="text" name="text" placeholder="여기에 축제/행사명을 입력하세요">
-				<input id="but" type="submit" name="button" value="검색">
+				<input class="textbar" type="text" name="text" placeholder="예) 전통, 투어, 파리">
+				<button class="but" type="submit"> <img src="pic/search.png"> </button>
 			</form>
 		</div>
 	</section>
 
 	<section class="icon_section">
+		<h2 class="con"> 조건을 골라 검색하세요 </h2>
 
 		<div class="icon_div">
 			<div class="tm" onclick="changeIframe('map.html')">
 				<figure id="map">		
 					<img src="pic/map.png">
 					<figcaption>
-						<p> <strong> 지도 </strong> </p>
+						<p> <strong> 지역 </strong> </p>
 					</figcaption>
 				</figure>
 			</div>
@@ -51,11 +57,53 @@
 				</figure>
 			</div>
 		</div>
-	</section>
-
-	<section class="iframe_section">
 		<iframe name="main_frame" id="main_frame" src="category.html"></iframe>
 	</section>
+
+	<footer>
+		<h2> 도움 받은 페이지들 </h2>
+		<div class="tm">
+			<a href="https://www.seoul.go.kr/main/index.jsp">
+				<figure>
+					<img src="pic/seoul.png">
+					<figcaption>
+						<strong> 서울시 홈페이지 </strong>
+					</figcaption>
+				</figure>
+			</a>
+		</div>
+		<div class="tm">
+			<a href="https://data.seoul.go.kr/dataList/OA-15486/S/1/datasetView.do">
+				<figure>
+					<img src="pic/logo.jpg">
+					<figcaption>
+						<strong> 문화행사 api </strong>
+					</figcaption>
+				</figure>
+			</a>
+		</div>
+		<div class="tm">
+			<a href="https://eclass.seoultech.ac.kr/ilos/main/main_form.acl">
+				<figure>
+					<img src="pic/eclass.png">
+					<figcaption>
+						<strong> 이클래스 </strong>
+					</figcaption>
+				</figure>
+			</a>
+		</div>
+		<div class="tm">
+			<a href="https://www.seoultech.ac.kr/index.jsp">
+				<figure>
+					<img src="pic/seoultech.png">
+					<figcaption>
+						<strong> 서울과학기술대학교 </strong>
+					</figcaption>
+				</figure>
+			</a>
+		</div>
+
+	</footer>
 
 	<script type="text/javascript" src="js/index.js"></script>
 </body>
