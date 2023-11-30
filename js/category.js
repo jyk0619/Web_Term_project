@@ -9,5 +9,5 @@ for (let i = 0; i < categories.length; i++) {
 } 
 
 function load(i, j) {
-    window.open('item.html?'+categories[i][j]+'=on');
+    window.open('item.html?'+'category='+categories[i][j]);
 }

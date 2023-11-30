@@ -122,5 +122,5 @@ function search() {
 
     date = startDate.getFullYear() + '-' + startDate.getMonth() + '-' + startDate.getDate();
     console.log(date);
-    window.open('item.html?'+date);
+    window.open('item.html?'+'date='+date);
 }

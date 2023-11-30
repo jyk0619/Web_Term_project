@@ -1,4 +1,13 @@
 
+
+
+function getQueryParam(param) {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    return urlParams.get(param);
+}
+
+
 //결과창 템플릿 만들기
 var template = `<a class="pageopen" href="" target="_blank" title="새창열림">     
             <span class="thum">
@@ -21,19 +30,46 @@ var template = `<a class="pageopen" href="" target="_blank" title="새창열림"
 //location , categories,s_name
 
 // http://openapi.seoul.go.kr:8088/564952574f6a796b38306b544f4561/xml/culturalEventInfo/1/5/CODENAME/TITLE/DATE
+var textValue = getQueryParam('text');
+var dateValue = getQueryParam('date');
+var categoryValue = getQueryParam('category')
+var locateValue = getQueryParam('location')
+
+if(textValue==null){textValue='%20'}
+if(dateValue==null){dateValue='%20'}
+if(categoryValue==null){categoryValue='%20'}
+if(locateValue==null){locateValue='%20'}
 
 const apiUrl=`http://openapi.seoul.go.kr:8088/564952574f6a796b38306b544f4561/json/culturalEventInfo/1/1000/`
-
-fetch(apiUrl)
+var searchUrl=`${apiUrl}${categoryValue}/${textValue}/${dateValue}`
+console.log(searchUrl)
+fetch(searchUrl)
 .then(res => res.json()) // JSON 응답을 JavaScript 객체 리터럴로 구문분석
 .then(data => {
+    if(locateValue!=="%20"){
+        // 필터링할 GUNAME 값
+  const targetGuname = locateValue;
 
-    
+  // GUNAME 값으로 필터링된 데이터 추출
+  const filteredData = data.culturalEventInfo.row.filter(item => item.GUNAME === targetGuname);
+  
 
+        for(var j=0;j<10;j++){
+            removedata(j)
+        }
+ 
+        for(var k=0;k<10;k++){
+            getFdata(filteredData,k)
+        }
+
+        console.log(filteredData);
+    }
+    else{
     for(var j=0;j<10&&data.culturalEventInfo.list_total_count;j++){
         getdata(data,j)
         
     }
+}
     console.log(data)
         });
 
@@ -90,7 +126,7 @@ function submitForm() {
     console.log('종료 날짜:', endValue);
     console.log('검색어:', sNameValue);
 
-    const fullUrl = `${apiUrl}${categoryValue}/${sNameValue}/`
+    const fullUrl = `${apiUrl}${categoryValue}/${sNameValue}/${startValue}`
 
    
 
