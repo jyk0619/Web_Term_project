@@ -112,3 +112,15 @@ function leftPad(value) {
     }
     return value;
 }
+
+function search() {
+    // 날짜 선택 안했을 시 경고
+    if (!isChoiced) {
+        alert('날짜를 선택하세요.');
+        return;
+    }
+
+    date = startDate.getFullYear() + '-' + startDate.getMonth() + '-' + startDate.getDate();
+    console.log(date);
+    window.open('item.html?'+date);
+}
