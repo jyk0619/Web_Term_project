@@ -21,8 +21,8 @@ td {
 }
 
 .Calendar {
-    width: 400px;
-    height: 400px;
+    width: 350px; 
+    height: 150px;
     text-align: center;
     font-size: 20px;
 }
@@ -37,7 +37,7 @@ td {
 
 .Calendar > tbody > tr > td > p {
     transition-duration: .2s;
-    line-height: 50px;
+    line-height: 40px;
     margin: 2.5px;
     display: block;
 }        
