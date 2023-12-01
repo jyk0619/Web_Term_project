@@ -120,7 +120,7 @@ function search() {
         return;
     }
 
-    date = startDate.getFullYear() + '-' + startDate.getMonth() + '-' + startDate.getDate();
+    date = startDate.getFullYear() + '-' + leftPad(startDate.getMonth() + 1) + '-' + leftPad(startDate.getDate());
     console.log(date);
     window.open('item.html?'+'date='+date);
 }
